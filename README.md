@@ -1,4 +1,6 @@
-resumin
-=======
+Resumin
+=============
 
-resum.in
+> #### Authors
++ Bartłomiej Gruszka
++ Sebastian Szczęch
