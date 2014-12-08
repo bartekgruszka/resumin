@@ -20,7 +20,17 @@
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "phpspec/phpspec": "~2.0",
+        "phpspec/prophecy": "1.1.*",
+        "behat/behat": "~3.0.13",
+        "behat/symfony2-extension": "~2.0@dev",
+        "behat/mink": "dev-master",
+        "behat/mink-extension": "~2.0@dev",
+        "behat/mink-browserkit-driver": "~1.1@dev",
+        "sensiolabs/behat-page-object-extension": "2.0.*@dev",
+        "bossa/phpspec2-expect": "~1.0.3",
+        "squizlabs/php_codesniffer": "1.5.*"
     },
     "scripts": {
         "post-root-package-install": [
