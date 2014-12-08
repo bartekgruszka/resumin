@@ -1,12 +1,31 @@
 security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface: bcrypt
+
     providers:
-        in_memory:
-            memory: ~
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
+    role_hierarchy:
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN]
 
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        default:
+        admin_panel:
+            pattern: ^/admin
+            form_login:
+                provider: fos_userbundle
+                check_path: fsi_admin_security_user_check
+                login_path: fsi_admin_security_user_login
+                default_target_path: /admin
+                always_use_default_target_path: true
+            logout:
+                path: fsi_admin_security_user_logout
             anonymous: ~
+
+    access_control:
+        - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin, roles: ROLE_ADMIN }
