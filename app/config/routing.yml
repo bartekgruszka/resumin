@@ -1,0 +1,15 @@
+resumin_admin:
+    resource: "@ResuminAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin:
+    resource: "@FSiAdminBundle/Resources/config/routing/admin.yml"
+    prefix: /admin
+
+admin_security:
+    resource: "@FSiAdminSecurityBundle/Resources/config/routing/admin_security.yml"
+    prefix: /admin
+
+admin_translatable:
+    resource: "@FSiAdminTranslatableBundle/Resources/config/routing/admin.yml"
+    prefix: /admin
