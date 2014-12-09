@@ -4,12 +4,16 @@ resumin_admin:
 
 admin:
     resource: "@FSiAdminBundle/Resources/config/routing/admin.yml"
-    prefix: /admin
+    prefix: /manager
 
 admin_security:
     resource: "@FSiAdminSecurityBundle/Resources/config/routing/admin_security.yml"
-    prefix: /admin
+    prefix: /manager
 
 admin_translatable:
     resource: "@FSiAdminTranslatableBundle/Resources/config/routing/admin.yml"
-    prefix: /admin
+    prefix: /manager
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /manager/register
