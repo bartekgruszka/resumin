@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Manage your resum.in</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% block stylesheets %}
+<head>
+    <title>Manage your resum.in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block stylesheets %}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        {% endblock %}
-    </head>
-    <body>
-    <div class="container">
-        {% block content %}{% endblock %}
-        {% block fos_user_content %}{% endblock %}
-    </div>
-    {% block javascripts %}
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     {% endblock %}
-    </body>
+</head>
+<body>
+<div class="container">
+    {% block content %}{% endblock %}
+    {% block fos_user_content %}{% endblock %}
+</div>
+{% block javascripts %}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
+</body>
 </html>

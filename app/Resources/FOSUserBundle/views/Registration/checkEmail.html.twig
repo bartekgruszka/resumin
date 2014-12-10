@@ -1,0 +1,15 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    {% include "@ResuminAdmin/Partials/_header.html.twig" %}
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ 'registration.check_email_header'|trans({}, 'FOSUserBundle') }}</div>
+                <div class="panel-body">
+                    {{ 'registration.check_email'|trans({'%email%': user.email}, 'FOSUserBundle') }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock fos_user_content %}
