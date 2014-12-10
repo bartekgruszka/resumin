@@ -1,0 +1,8 @@
+registration:
+  check_email_header: Confirmation
+  confirmed_header: Congrats!
+
+resetting:
+  check_email_header: Confirmation
+  password_already_requested_header: Check email
+
