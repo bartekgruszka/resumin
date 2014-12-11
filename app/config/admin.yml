@@ -1,14 +1,6 @@
 framework:
     translator: { fallback: %locale% }
 
-fsi_admin_translatable:
-    locales:
-      - en
-
-fsi_resource_repository:
-    db_driver: orm
-    resource_class: Resumin\Bundle\AdminBundle\Entity\Resource
-
 fos_user:
     db_driver: orm
     firewall_name: admin_panel
