@@ -1,0 +1,18 @@
+default:
+    suites:
+        resumin_manager:
+            type: symfony_bundle
+            bundle: ResuminManagerBundle
+            contexts:
+                - Resumin\Bundle\ManagerBundle\Features\Context\BaseContext
+    extensions:
+        SensioLabs\Behat\PageObjectExtension:
+          namespaces:
+            page:
+              - Resumin\Bundle\ManagerBundle\Features\Pages
+        Behat\Symfony2Extension: ~
+        Behat\MinkExtension:
+          base_url: http://localhost/app_test.php
+          sessions:
+            my_session:
+              symfony2: ~
