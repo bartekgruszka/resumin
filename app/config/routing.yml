@@ -1,7 +1,3 @@
-resumin_admin:
-    resource: "@ResuminAdminBundle/Resources/config/routing.yml"
-    prefix:   /
-
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
     prefix: /manager
@@ -21,3 +17,7 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /manager/profile
+
+resumin_manager:
+    resource: "@ResuminManagerBundle/Resources/config/routing.yml"
+    prefix:   /manager

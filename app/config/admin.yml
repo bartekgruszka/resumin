@@ -4,7 +4,7 @@ framework:
 fos_user:
     db_driver: orm
     firewall_name: admin_panel
-    user_class: Resumin\Bundle\AdminBundle\Entity\User
+    user_class: Resumin\Bundle\ManagerBundle\Entity\User
     registration:
       confirmation:
         enabled: true

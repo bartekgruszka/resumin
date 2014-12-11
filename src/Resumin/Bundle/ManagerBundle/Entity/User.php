@@ -1,6 +1,6 @@
 <?php
 
-namespace Resumin\Bundle\AdminBundle\Entity;
+namespace Resumin\Bundle\ManagerBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
